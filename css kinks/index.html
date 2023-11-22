@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-links li a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .nav-links li a:link{
+            color: red;
+        }
+        .nav-links li a:visited{
+            color: green;
+        }
+        .nav-links li a:hover{
+            color: cornflowerblue;
+            text-decoration: underline;
+        }
+        .nav-links li a:active{
+            color: purple;
+        }
+        /* .first-a{
+            background-color: aqua;
+        } */
+
+        .nav-links li:nth-child(4){
+            background-color: aqua;
+        }
+        .nav-links li a::after{
+           content: '\0024';
+        }
+
+    </style>
+</head>
+<body>
+    <h2>psoudo classes example</h2>
+    <ul class="nav-links">
+        <li>
+            <a href="dashboard.html">Login</a>
+        </li>
+        <li>
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+        <li>
+            <a href="about.html">About</a>
+        </li>
+        <li>
+            <a href="services.html">Services</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+    </ul>
+</body>
+</html>
